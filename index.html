@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 工作術課前問卷</title>
+  <style>
+    body {
+      font-family: "微軟正黑體", sans-serif;
+      background-color: #f5f5f5;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .checkbox-group, .radio-group {
+      margin-top: 0.5rem;
+    }
+    .checkbox-group label, .radio-group label {
+      font-weight: normal;
+      display: block;
+      margin: 0.3rem 0;
+    }
+    .scale-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.5rem;
+    }
+    button {
+      margin-top: 2rem;
+      background-color: #2ecc71;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 2rem;
+      background-color: #ecf0f1;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>AI 工作術課前問卷</h1>
+
+<form id="aiForm" 
+action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSflID1YsMbdqDBkENr6NTkM7hGKB_1TWeRVf-AJxNwCETLTrg/formResponse" method="post">
+    
+  <label for="name">請填寫您的姓名</label>
+  <input type="text" id="name" name="entry.431340726" required>
+
+  <label>請選擇您的職位</label>
+  <div class="radio-group">
+    <label><input type="radio" name="entry.1206048991" value="工程師" required> 工程師</label>
+    <label><input type="radio" name="entry.1206048991" value="管理者"> 管理者</label>
+    <label><input type="radio" name="entry.1206048991" value="行銷"> 行銷</label>
+    <label><input type="radio" name="entry.1206048991" value="其他"> 其他</label>
+  </div>
+
+  <label>請選擇您的學習期待（可複選）</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox" name="entry.216007451" value="提高 AI 應用能力"> 提高 AI 應用能力</label>
+    <label><input type="checkbox" name="entry.216007451" value="學習自動化技巧"> 學習自動化技巧</label>
+    <label><input type="checkbox" name="entry.216007451" value="提高生產力"> 提高生產力</label>
+  </div>
+
+  <label>請自評您的 AI 了解程度（1～5）</label>
+  <div class="scale-group">
+    <label><input type="radio" name="entry.265758803" value="1" required> 1</label>
+    <label><input type="radio" name="entry.265758803" value="2"> 2</label>
+    <label><input type="radio" name="entry.265758803" value="3"> 3</label>
+    <label><input type="radio" name="entry.265758803" value="4"> 4</label>
+    <label><input type="radio" name="entry.265758803" value="5"> 5</label>
+  </div>
+
+  <button type="submit">送出問卷</button>
+</form>
+
+
+
+</body>
+</html>
